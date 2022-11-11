@@ -4,7 +4,7 @@ require("./dbms/connection.js");
 const vaccineModel = require("./dbms/schema/vaccine_data.js");
 
 // const port = 80;
-const port = 3000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 
